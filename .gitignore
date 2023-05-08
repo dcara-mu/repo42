@@ -1,0 +1,23 @@
+# ingora archivos de respaldo
+*~
+
+# igonra archivos por defecto de Apple
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ignora ficheros que podrían aparecer en la raíz
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# ignora directorios potencialmente creados en remoto
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
