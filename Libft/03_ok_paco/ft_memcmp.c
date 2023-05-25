@@ -1,24 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcara-mu <dcara-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/28 15:15:53 by dcara-mu          #+#    #+#             */
-/*   Updated: 2023/05/24 11:06:49 by dcara-mu         ###   ########.fr       */
+/*   Created: 2023/05/24 11:46:56 by dcara-mu          #+#    #+#             */
+/*   Updated: 2023/05/24 12:08:57 by dcara-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-#include "libft.h"
+#include "libc.h"
 
-int	ft_isalpha(int c)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	return ((c > 64 && c < 91) || (c > 96 && c < 123));
+	unsigned char	*ptr1;
+	unsigned char	*ptr2;
+
+	ptr1 = (unsigned char *) s1;
+	ptr2 = (unsigned char *) s2;
+	while (n && *ptr1 == *ptr2)
+	{
+		ptr1++;
+		ptr2++;
+		n--;
+	}
+	if (n)
+		return (*ptr1 - *ptr2);
+	else
+		return (0);
 }
 
-/* int	main(void)
-{
-	printf("%i", ft_isalpha('*'));
-} */
+/*
+devuelve la diferencia entre los dos primeros bytes diferentes
+(tratados como valores de caracteres sin signo.
+*/

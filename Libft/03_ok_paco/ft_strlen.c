@@ -6,7 +6,7 @@
 /*   By: dcara-mu <dcara-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 10:58:38 by dcara-mu          #+#    #+#             */
-/*   Updated: 2023/05/10 16:58:14 by dcara-mu         ###   ########.fr       */
+/*   Updated: 2023/05/24 14:55:11 by dcara-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,14 @@ size_t	ft_strlen(const char *s)
 	return (i);
 }
 
-/* int	main(void)
+/*
+int	main(void)
 {
 	printf("%s", "Tu cadena tiene ");
 	printf("%zu", ft_strlen("Lo estas haciendo BIEN"));
 	printf("%s", " caracteres"); 
-}*/
+}
+*/
 
 /*La función strlen() calcula la longitud de la cadena s.
 La función strlen() devuelve el número de caracteres que preceden al 

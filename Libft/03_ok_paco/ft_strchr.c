@@ -6,7 +6,7 @@
 /*   By: dcara-mu <dcara-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/10 19:02:36 by dcara-mu          #+#    #+#             */
-/*   Updated: 2023/05/11 13:28:15 by dcara-mu         ###   ########.fr       */
+/*   Updated: 2023/05/11 18:43:07 by dcara-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@
 } */
 
 // Opción 2 - provoca BUS ERROR, pero funciona cuando no existe la cadena
-/* char	*ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	char	*ptr;
 
@@ -36,19 +36,19 @@
 	while (*ptr != c || *ptr != '\0')
 		ptr++;
 	return (ptr);
-} */
+}
 
 //Opción 3:
-char	*ft_strchr(const char *s, int c)
+/* char	*ft_strchr(const char *s, int c)
 {
 	char	*ptr;
 
 	ptr = (char *) s;
-	while (*ptr != c)
+	while (*ptr != (unsigned char) c)
 	{
-		if (*ptr == '\0')
+		if (!ptr)
 			return (NULL);
 		ptr++;
 	}
 	return (ptr);
-}
+} */

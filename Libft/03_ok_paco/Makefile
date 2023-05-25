@@ -6,7 +6,7 @@
 #    By: dcara-mu <dcara-mu@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/27 16:43:23 by dcara-mu          #+#    #+#              #
-#    Updated: 2023/05/11 15:52:29 by dcara-mu         ###   ########.fr        #
+#    Updated: 2023/05/25 10:58:24 by dcara-mu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,12 @@ FILES   =	ft_isalpha.c\
 			ft_toupper.c\
 			ft_tolower.c\
 			ft_strchr.c\
-			ft_strrchr.c
+			ft_strrchr.c\
+			ft_strncmp.c\
+			ft_memchr.c\
+			ft_memcmp.c\
+			ft_strnstr.c\
+			ft_atoi.c
 OBJECTS = $(FILES:.c=.o)
 FLAGS   = -Wall -Wextra -Werror
 

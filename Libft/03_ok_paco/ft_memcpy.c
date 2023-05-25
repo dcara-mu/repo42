@@ -6,7 +6,7 @@
 /*   By: dcara-mu <dcara-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 12:29:32 by dcara-mu          #+#    #+#             */
-/*   Updated: 2023/05/04 18:05:46 by dcara-mu         ###   ########.fr       */
+/*   Updated: 2023/05/24 11:33:22 by dcara-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,11 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	printf("%s", memcpy("Hola mundo", "Arde la calle ASDP", 4));
 } */
 
-/*La función memcpy() copia n bytes del área de memoria src al área de 
+/*
+La función memcpy() copia n bytes del área de memoria src al área de 
 memoria dst. Si dst y src se superponen, el comportamiento no está definido. 
 Las aplicaciones en las que dst y src pueden superponerse deberían usar 
 memmove en su lugar.
-
-La función memcpy() devuelve el valor original de dst.*/
+**
+La función memcpy() devuelve el valor original de dst.
+*/
